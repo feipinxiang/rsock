@@ -4,7 +4,7 @@
 
 ### 简介
 
-rsock仅仅不是加速（加速目前由kcptun进行），也不是vpn，而是把udp流量转换成多条**伪tcp/正常udp**流量。 rsock和udp类似，传输的数据是不可靠的，也没有流控，超时重发等算法，所以目前须搭配kcptun使用或者其他有ARQ机制的udp程序使用。rsock的目的是，防止isp对udp流量的qos。目前仅支持mac（包括其他Unix）和Linux。kcptun的简介和使用见[这里](https://github.com/xtaci/kcptun)。 shadowsocks的简介见[这里](https://github.com/shadowsocks/shadowsocks-go) 。
+rsock既不是加速（加速目前由kcptun进行），也不是vpn，而是把udp流量转换成多条**伪tcp/正常udp**流量。 rsock和udp类似，传输的数据是不可靠的，也没有流控，超时重发等算法，所以目前须搭配kcptun使用或者其他有ARQ机制的udp程序使用。rsock的目的是，防止isp对udp流量的qos。目前仅支持mac（包括其他Unix）和Linux。kcptun的简介和使用见[这里](https://github.com/xtaci/kcptun)。 shadowsocks的简介见[这里](https://github.com/shadowsocks/shadowsocks-go) 。
 
 再强调一次，rsock的传输是**不可靠的**，可靠的传输由app层负责。
 
